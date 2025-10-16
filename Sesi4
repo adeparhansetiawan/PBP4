@@ -1,0 +1,15 @@
+const film = {
+    judul: "Intersteller",
+    tahunRilis : 2014,
+    sutradara: "Christopher Nolan",
+    genre: ["Sci-fi", "Adventure", "Drama"],
+    tampilkanDetail:function(){
+        return `judul: ${this.judul}
+Tahun Rilis: ${this.sutradara}
+Sutradara: ${this.sutradara}
+Genre: ${this.genre.join(".")}`;
+    }
+}
+console.log(`Sutradara: $film.sutradara}`);
+console.log(`Genre kedua: $[film.genre[1]}`);
+console.log(`Detail:\n`,film.tampilkanDetail());
